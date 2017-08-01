@@ -1,0 +1,62 @@
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context="com.ionidea.ao.ui.fragment.WearablesFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_start_scan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Start scan" />
+
+                <Button
+                    android:id="@+id/btn_stop_scan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stop scan" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Write '56'" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_bluetooth_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
